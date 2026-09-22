@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Scale, Share2, ChevronLeft, Link as LinkIcon, X, Check, Copy } from "lucide-react";
+import { Scale, Share2, ChevronLeft, X, Check, Copy } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import toast, { Toaster } from "react-hot-toast";
 import { DiaTextReveal } from "@/components/ui/dia-text-reveal";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -38,8 +37,6 @@ const App = () => {
 			}}
 			dir="rtl"
 		>
-			<Toaster position="top-center" />
-
 			<div className="flex flex-col items-center gap-10 z-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out fill-mode-both">
 				
 				{/* Logo Container mimicking the reference style */}
